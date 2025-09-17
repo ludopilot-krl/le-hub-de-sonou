@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonouHub</title>
+    <link rel="stylesheet" href="incription.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="div-choix-btn">
+        <button id="etudiant" class="style-boutton-active">Etudiant</button>
+        <button id="enseignant" class="style-boutton-no-active">
+          enseignant
+        </button>
+      </div>
+    </nav>
+    <section id="contenaire-inscription">
+      <h1>Inscription</h1>
+      <div class="contenaire-formulaire" id="formulaire-inscription">
+        <label for="name">Votre nom</label>
+        <input type="text" id="name" />
+
+        <label for="prenom">Votre prenom</label>
+        <input type="text" id="prenom" />
+
+        <label for="numero">Votre numero</label>
+        <input type="number" name="numero" />
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" />
+        <input type="password" id="" />
+
+        <label for="site">Site</label>
+        <select name="site" id="site">
+          <option value="">Porto-novo</option>
+          <option value="">Cotonou</option>
+        </select>
+
+        <label for="filiere">filiere</label>
+        <select name="filiere" id="filiere">
+          <option value="">SSRI</option>
+          <option value="">SIL</option>
+        </select>
+      </div>
+
+      <!-- div de connexion pour les enseignants -->
+      <div
+        class="contenaire-formulaire hidden"
+        id="formulaire-inscription-enseignant"
+      >
+        <label for="name-enseignant">Votre nom</label>
+        <input type="text" id="name-enseignant" />
+
+        <label for="prenom-enseignant">Votre prenom</label>
+        <input type="text" id="prenom-enseignant" />
+
+        <label for="numero">Votre numero</label>
+        <input type="number" name="numero" />
+
+        <label for="password-enseignant">Mot de passe</label>
+        <input type="password" id="password-enseignant" />
+        <input type="password" id="confir-password-enseignant" />
+      </div>
+
+      <!-- ////////////////////// -->
+
+      <div class="contenaire-formulaire hidden" id="formulaire-connexion">
+        <label for="name">Votre nom</label>
+        <input type="text" id="name-connexion" />
+
+        <label for="password-connexion">Mot de passe</label>
+        <input type="password" id="password-connexion" />
+      </div>
+
+      <!-- :     :::::::::::::::::::::::::::::::::::: -->
+      <div class="div-btn-inscription-connexion">
+        <button class="inscription style-boutton-active">M'inscrire</button>
+        <button class="connexion style-boutton-no-active">Connexion</button>
+      </div>
+    </section>
+
+    <script src="inscriptions.js"></script>
+  </body>
+</html>
