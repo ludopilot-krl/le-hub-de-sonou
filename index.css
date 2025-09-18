@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+
+
 body{
     display: flex;
     justify-content: center;
@@ -5,6 +11,7 @@ body{
     align-items: center;
     height: 50vh;
     background-color: rgba(128, 235, 251, 0.733);
+    font-family: "Peralta", serif;
 }
 #div-choix-btn{
     width: 50%;

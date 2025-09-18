@@ -17,69 +17,85 @@
     </nav>
     <section id="contenaire-inscription">
       <h1>Inscription</h1>
-      <div class="contenaire-formulaire" id="formulaire-inscription">
-        <label for="name">Votre nom</label>
-        <input type="text" id="name" />
+      <form action="" id="formulaire-inscription">
+        <div class="contenaire-formulaire" id="div-formulaire-inscription">
+          <label for="name">Votre nom</label>
+          <input type="text" id="name" class="name" />
 
-        <label for="prenom">Votre prenom</label>
-        <input type="text" id="prenom" />
+          <label for="prenom">Votre prenom</label>
+          <input type="text" id="prenom" class="prenom" />
 
-        <label for="numero">Votre numero</label>
-        <input type="number" name="numero" />
+          <label for="email">Votre email</label>
+          <input type="email" name="email" id="email" class="email" />
 
-        <label for="password">Mot de passe</label>
-        <input type="password" id="password" />
-        <input type="password" id="" />
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" class="password" />
+          <input type="password" id="confirm-password" class="password" />
 
-        <label for="site">Site</label>
-        <select name="site" id="site">
-          <option value="">Porto-novo</option>
-          <option value="">Cotonou</option>
-        </select>
+          <label for="site">Site</label>
+          <select name="site" id="site">
+            <option value="">Porto-novo</option>
+            <option value="">Cotonou</option>
+          </select>
 
-        <label for="filiere">filiere</label>
-        <select name="filiere" id="filiere">
-          <option value="">SSRI</option>
-          <option value="">SIL</option>
-        </select>
-      </div>
+          <label for="filiere">filiere</label>
+          <select name="filiere" id="filiere">
+            <option value="">SSRI</option>
+            <option value="">SIL</option>
+          </select>
+        </div>
+      </form>
 
       <!-- div de connexion pour les enseignants -->
-      <div
-        class="contenaire-formulaire hidden"
-        id="formulaire-inscription-enseignant"
-      >
-        <label for="name-enseignant">Votre nom</label>
-        <input type="text" id="name-enseignant" />
+      <form action="" id="formulaire-inscription-enseignant">
+        <div
+          class="contenaire-formulaire hidden"
+          id="div-formulaire-inscription-enseignant"
+        >
+          <label for="name-enseignant">Votre nom</label>
+          <input type="text" id="name-enseignant" class="name" />
 
-        <label for="prenom-enseignant">Votre prenom</label>
-        <input type="text" id="prenom-enseignant" />
+          <label for="prenom-enseignant">Votre prenom</label>
+          <input type="text" id="prenom-enseignant" class="prenom" />
 
-        <label for="numero">Votre numero</label>
-        <input type="number" name="numero" />
+          <label for="email">Votre email</label>
+          <input
+            type="email"
+            name="email"
+            id="email-enseignant"
+            class="email"
+          />
 
-        <label for="password-enseignant">Mot de passe</label>
-        <input type="password" id="password-enseignant" />
-        <input type="password" id="confir-password-enseignant" />
-      </div>
-
+          <label for="password-enseignant">Mot de passe</label>
+          <input type="password" id="password-enseignant" class="password" />
+          <input
+            type="password"
+            id="confir-password-enseignant"
+            class="password"
+          />
+        </div>
+      </form>
       <!-- ////////////////////// -->
-
-      <div class="contenaire-formulaire hidden" id="formulaire-connexion">
-        <label for="name">Votre nom</label>
-        <input type="text" id="name-connexion" />
-
-        <label for="password-connexion">Mot de passe</label>
-        <input type="password" id="password-connexion" />
-      </div>
-
+      <form action="" id="formulaire-connexion">
+        <div class="contenaire-formulaire hidden" id="div-formulaire-connexion">
+          <label for="name">Votre nom</label>
+          <input type="text" id="name-connexion" class="name" />
+          <label for="password-connexion">Mot de passe</label>
+          <input type="password" id="password-connexion" class="password" />
+        </div>
+        <!-- <div class="erreur-de-saisi hidden"> -->
+        <p></p>
+        <!-- </div> -->
+      </form>
       <!-- :     :::::::::::::::::::::::::::::::::::: -->
       <div class="div-btn-inscription-connexion">
         <button class="inscription style-boutton-active">M'inscrire</button>
         <button class="connexion style-boutton-no-active">Connexion</button>
       </div>
     </section>
-
+    <button class="test" onclick="connexionUtilisateur(formulaireInscription)">
+      voyons voir ce que ca donne
+    </button>
     <script src="inscriptions.js"></script>
   </body>
 </html>
