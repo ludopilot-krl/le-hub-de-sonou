@@ -57,6 +57,7 @@ console.log(bouttonInscription);
 const bouttonConnexion = DivConnexionInscription.querySelector('.connexion');
 console.log(bouttonConnexion);
 
+//////////////////////////////////////////////////////////////////////
 
 const personnesInscris = [
 
@@ -115,6 +116,7 @@ const connexionUtilisateur = (formulaire) => {
         p.style.textAlign = 'center';
     }
 
+    //si les champs ne sont pas vides et que l'utilisateur n'existe pas
     if (!inputIsEmpty && !utilisateurExiste) {
         personnesInscris.push(nouvelUtilisateur)
         console.log('nouvele utilisateur creer', personnesInscris)
@@ -124,11 +126,9 @@ const connexionUtilisateur = (formulaire) => {
         formulaire.reset()
     }
 
-    //prends les valeurs des champs, creer un nouvelle objet
 
 }
-// connexionUtilisateur(formulaireInscription)
-
+/**////////////////////********************** */ */
 
 
 
@@ -144,6 +144,9 @@ const elementVisibility = (display, hide1, hide2) => {
     hide2.classList.add('hidden');
 
 }
+
+
+/***********evenement sur la nav et ses bouttons////////////// */
 nav.addEventListener('click', (e) => {
     let elementCliquer = e.target;
 
@@ -181,6 +184,7 @@ nav.addEventListener('click', (e) => {
 }
 
 )
+/*****evenement sur les sections*************/
 sectionConnexion.addEventListener('click', (e) => {
     let elementCliquer = e.target;
 
